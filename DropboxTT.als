@@ -61,6 +61,19 @@ fact{
 	all f:Object| (f.parent = Dropbox) => f in Dropbox.contents
 }
 
+fact traces{
+	init[first]
+	security[first]
+}
+	
+pred init[t: Time]{
+	no Device.dropbox.t
+}
+
+pred security[t: Time]{
+		all t': t.nexts |
+			Device.dropbox.t' = Dropbox
+}
 
 pred show[]{}
 

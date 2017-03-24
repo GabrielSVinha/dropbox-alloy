@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<alloy>
+
+<view>
+
+<projection> <type name="Dropbox"/> </projection>
+
+<defaultnode/>
+
+<defaultedge/>
+
+<node>
+   <type name="Dropbox"/>
+   <type name="Int"/>
+   <type name="String"/>
+   <type name="univ"/>
+   <type name="File/File"/>
+   <type name="SAObject/SAObject"/>
+   <type name="seq/Int"/>
+   <set name="live" type="SAObject/SAObject"/>
+   <set name="root" type="Folder/Folder"/>
+</node>
+
+<node shape="Parallelogram" color="Blue">
+   <type name="Folder/Folder"/>
+</node>
+
+</view>
+
+</alloy>

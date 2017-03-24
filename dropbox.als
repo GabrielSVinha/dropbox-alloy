@@ -1,3 +1,7 @@
+one sig FileSystem{
+	root: one Root
+}
+
 sig FSObject {
 	parent: lone Dir
 }
@@ -33,7 +37,7 @@ assert acyclicsm{
 	no dir: Dir | no dir.parent
 }
 
-check acyclicsm for 4
+//check acyclicsm for 4
 
 //check oneRoot for 4
 
